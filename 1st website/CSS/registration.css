@@ -1,0 +1,155 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../IMG/clgblurimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*---------------Header Styles----------------*/
+
+header 
+{
+    background-color: rgb(206, 149, 27);
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    border: solid 3px black;
+}
+
+.navbar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo 
+{
+    margin-right: 20px;
+}
+
+.nav-links 
+{
+    list-style-type: none;
+    padding: 2px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border: solid 3px black;
+}
+
+.nav-links li 
+{
+    margin: 0 15px;
+}
+
+.nav-links a 
+{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+}
+.nav-links a:hover 
+{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+/*----------------registration---------------*/
+
+
+.registration-container 
+{
+    
+    width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    flex: 1;
+    border: solid 3px black;
+    background-image:url("../IMG/clglogo.jpg");
+    background-repeat: no-repeat;
+    background-size:15%;
+    background-position: left-top;
+    overflow: hidden;
+}
+
+.registration-container h2 
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-container label 
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-container input[type="text"],
+.registration-container input[type="email"],
+.registration-container input[type="password"],
+.registration-container select,
+.registration-container textarea 
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-container input[type="radio"],
+.registration-container input[type="checkbox"] 
+{
+    margin-right: 5px;
+}
+
+.registration-container button 
+{
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    text-decoration: solid;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registration-container button:hover 
+{
+    background-color: #555;
+}
+
+
+/*-------------footer-----------*/
+
+footer 
+{
+    background-color:  rgb(206, 149, 27);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 0px;
+    border: solid 3px black;
+    font-weight: bold;
+}

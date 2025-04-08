@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link href="../Bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script src="../JS/script.js"></script>
+  <style>
+    body 
+    {
+      background-color: #f0f2f5;
+    }
+    .registration-container 
+    {
+      max-width: 600px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+    .form-label 
+    {
+      color: #333;
+    }
+    .btn-primary 
+    {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .nav-link:hover {
+      text-decoration: underline; 
+    }
+  </style>
+</head>
+<body>
+  <!-------------------Header------------------->
+  <header class="bg-dark text-white p-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="index.html"><img src="../IMG/tklogo.jpg" alt="Hotel Logo" height="50" class="hover"></a>
+        <h1>TK luxurious Hotel</h1>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link text-white link-hover">Home</a></li>
+            <li class="nav-item"><a href="registration.html" class="nav-link text-white">Register</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link text-white">Login</a></li>
+            <li class="nav-item"><a href="hotelbooking.html" class="nav-link text-white">Hotel Booking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Registration Form -->
+  <section class="container mt-4">
+    <div class="registration-container mx-auto">
+      <h2 class="text-center mb-4">Register to Book a Hotel</h2>
+      <form id="registrationForm"  onsubmit="return validateregistrationform()" action="login.html">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name:</label>
+          <input type="text" class="form-control" id="name" >
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" >
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="password" >
+        </div>
+        <div class="mb-3">
+          <label for="birthdate" class="form-label">Birth Date:</label>
+          <input type="date" class="form-control" id="birthdate" >
+        </div>
+        <div class="mb-3">
+          <label for="gender" class="form-label">Gender:</label>
+          <select id="gender" class="form-select" >
+            <option value="" selected disabled>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="language" class="form-label">Language:</label>
+          <select id="language" class="form-select" >
+            <option value="" selected disabled>Select Language</option>
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Gujarati">Gujarati</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="city" class="form-label">City:</label>
+          <input type="text" class="form-control" id="city" >
+        </div>
+        <div class="mb-3">
+          <label for="mobile" class="form-label">Mobile Number:</label>
+          <input type="text" class="form-control" id="mobile" >
+        </div>
+        <button type="submit" class="btn btn-primary form-control">Register</button>
+        <br><br>
+        <p>If you have an account?<a href="login.html">Login here</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3 mt-4">
+    <p>&copy; 2024 All rights reserved By Kevin Tarsriya.</p>
+  </footer>
+
+
+</body>
+</html>

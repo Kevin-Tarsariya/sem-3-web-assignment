@@ -1,0 +1,225 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../IMG/clgblurimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*---------------Header Styles----------------*/
+
+header 
+{
+    background-color: rgb(206, 149, 27);
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    border: solid 3px black;
+}
+
+.navbar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo 
+{
+    margin-right: 20px;
+}
+
+.nav-links 
+{
+    list-style-type: none;
+    padding: 2px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border: solid 3px black;
+}
+
+.nav-links li 
+{
+    margin: 0 15px;
+}
+
+.nav-links a 
+{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+}
+.nav-links a:hover 
+{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+/*---------------Main Content Styles-------------*/
+
+.main-content 
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events-list 
+{
+    background-color: lightcoral;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.events-list ul 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.events-list li 
+{
+    margin-bottom: 10px;
+}
+
+.events-list a 
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    background-color: #004080;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.events-list a:hover 
+{
+    background-color: #0066cc;
+}
+
+.event-articles 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event 
+{
+    display: flex;
+    background-color: lightcoral;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-image 
+{
+    width: 300px;
+    height: auto;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.events-details-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-details
+{
+    width: 600px; 
+    margin: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.event-details:hover 
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out; 
+}
+.event:hover 
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out; 
+}
+.events-list 
+{
+    transition: transform 0.5s ease;
+}
+
+.events-list:hover 
+{
+    transform: scale(1.1);
+}
+
+.events-list li 
+{
+    transition: transform 0.5s ease;
+}
+
+.events-list li:hover 
+{
+    transform: scale(1.1);
+}
+
+.events-list a 
+{
+    transition: background-color 0.5s ease;
+}
+
+.events-list a:hover 
+{
+    background-color: #0066cc;
+}
+.event-image:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out; 
+}
+/*-------------footer-----------*/
+
+footer 
+{
+    background-color:  rgb(206, 149, 27);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border: solid 3px black;
+    font-weight: bold;
+}

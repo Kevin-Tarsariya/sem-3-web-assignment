@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="../CSS/registration.css">
+    <script src="../JS/validationscript.js"></script>
+</head>
+<body>
+    <!--------------Header------------------>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../IMG/clglogo.jpg" alt="College Logo" width="40px" style="border-radius: 10px;">
+            </div>
+            <h1>Vivekanand College Celebrations</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eventspage.html">Events</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--------------Registartion Form------------------>
+ 
+    <div class="registration-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" onsubmit="return validateregistrationform()" action="login.html">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name">
+        
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter the Password">
+        
+            <label for="Contact">Contact No:</label>
+            <input type="text" id="Contact" name="Contact" placeholder="Enter Your Contact No">
+        
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male"> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+            <input type="radio" id="other" name="gender" value="Other"> Other
+        
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" id="hobby1" name="hobbies" value="reading"> Reading
+            <input type="checkbox" id="hobby2" name="hobbies" value="singing"> Singing
+            <input type="checkbox" id="hobby3" name="hobbies" value="sports"> Sports
+        
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <option value="">Select City</option>
+                <option value="surat">Surat</option>
+                <option value="vapi">Vapi</option>
+                <option value="ahamdabad">Ahamdabad</option>
+                <option value="vadodra">Vadodra</option>
+            </select>
+        
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+        
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode">
+        
+            <button type="submit">Register</button><br><br>
+            <p>If you have an account?<a href="login.html">Login here</a></p>
+        </form>
+    </div>
+
+   <!---------------Footer----------------->
+   <footer>
+    <p>&copy; 2024 All rights reserved By Kevin Tarsriya.</p>
+   </footer>
+
+</body>
+</html>
